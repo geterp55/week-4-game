@@ -3,7 +3,7 @@
 
 //VARIABLES
 //==============================================================
-var gameStart = [23, 37, 55, 75, 88];
+var gameMasterNum = [23, 37, 55, 75, 88];
 var gemValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 var runTotal = 0;
 
@@ -22,31 +22,38 @@ var runTotal = 0;
 //var diamondButton = 0;
 
 
-//Start game
-//function (startGame){
-	var gameGuess = gameStart[Math.floor(Math.random() * gameStart.length)];
-	console.log(gameGuess);
-//}
+//THIS SELECTS THE START OF THE GAME
+$(document).ready(function(){
+	
+	    $(".allButtons").click(function(){
+	    	//for (var i=0;i=2;i++);{
+	        var gameGuess = gameMasterNum[Math.floor(Math.random() * gameMasterNum.length)];
+			document.getElementById('counterBox').innerHTML = gameGuess;
+			//console.log(gameGuess);use this to check if working
+			//}    
+	    });	 
+ });
+
 	
 	
 
-	for (var i=0; i < 12; i++){
-		var gemClick = gemValues[Math.floor(Math.random() * gemValues.length)];
-		console.log(gemClick);
+	//for (var i=0; i < 12; i++){
+	//	var gemClick = gemValues[Math.floor(Math.random() * gemValues.length)];
+	//	console.log(gemClick);
 
-		if (runTotal < gameGuess){
-			runTotal = runTotal + gemClick;
-			console.log(runTotal + " total");  
-		}
-		else if(runTotal === gameGuess){
-			runTotal = runTotal + " You Win";
-			console.log(runTotal);
-		}
-		else{
-			runTotal = runTotal + " You lose!";
-			console.log(runTotal);
-		}
-	}
+	//	if (runTotal < gameGuess){
+	//		runTotal = runTotal + gemClick;
+	//		console.log(runTotal + " total");  
+	//	}
+	//	else if(runTotal === gameGuess){
+	//		runTotal = runTotal + " You Win";
+	//		console.log(runTotal);
+	//	}
+	//	else{
+	//		runTotal = runTotal + " You lose!";
+	//		console.log(runTotal);
+	//	}
+	//}
 
 
 

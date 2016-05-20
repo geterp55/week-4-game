@@ -1,64 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE <!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Bootstrap Demo</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+	<title>Crystals Collector!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
-	<!-- Creates the Overall Grid -->
-	<div class="container">
+<div class="container">
+	<div class="row">
+  		<div class="col-sm-12">
+  			<h3>CrystalCollector!</h3>
+  		</div>
+	</div>
+		<!--<img src="assets/diamond_upholstery_@2X.png" class="img-fluid" alt="Responsive image">-->
+	
+
+	<div class="panel panel-default">
+  		<div class="panel-body" id="box2">
+  			<p>You will be given a random number at the start of the game.
+			There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+			</p>
+
+			<p>You win th egame by matching your total score to random number, you lose the game if your total score goes above the random number.
+			</p>
 		
-		<!-- Row 1 -->
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Header</h1>
-			</div>
-		</div>
-		<!-- Row 2 -->
-		<div class="row">
-			<div class="col-sm-3">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt optio provident tempora amet, eveniet et, eum illum, culpa laborum dicta recusandae magni architecto. Illo saepe facilis, unde. Debitis, atque, doloremque?</p>
-			</div>
-			<div class="col-sm-3">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur itaque, ipsam nihil. Alias, nemo.</p>
-			</div>
-			<div class="col-sm-3">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione sint ex porro excepturi non dolorum, ullam ea quae vel earum, soluta obcaecati natus. Eligendi iusto accusantium mollitia debitis assumenda!</p>
-			</div>
-		</div>
-		<!-- Row 3 -->
-		<div class="row">
-			<div class="col-sm-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-			</div>
-			<div class="col-sm-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-			</div>
-			<div class="col-sm-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-			</div>
-			<div class="col-sm-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-			</div>
-			<div class="col-sm-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-			</div>
-			<div class="col-sm-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-			</div>
-		</div>
-		<!-- Row 4 -->
-		<div class="row">
-			<div class="col-sm-6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo voluptates blanditiis nisi! Ullam dolore aspernatur, ratione error similique veniam iusto, labore repellat eaque nostrum optio doloribus illo nihil dolor?</p>
-			</div>
-			<div class="col-sm-6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p>
-			</div>
-		</div>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+		
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+  		</div>
 	</div>
 	
+	<div class="row">
+  		<div class="col-lg-8" id="counterBox">
+  		
+  		</div>
+		<div class="col-lg-8" id="gameCounterBox">
+			<div>Wins:</div>
+	  		<div>Losses: </div>
+  		</div>
+	</div>
+
+<!--place bootstrap buttons herer instead of grid + images place on-click functions-->
+
+	<div class="allButtons">
+		<button class="btn btn-default" type="submit" id="ruby">Ruby</button>	
+		<button class="btn btn-default" type="submit" id="diamond">Diamond</button>	
+		<button class="btn btn-default" type="submit" id="yellow">Yellow</button>
+		<button class="btn btn-default" type="submit" id="emerald">Emerald</button>
+
+	</div>
+
+
+
+	<div class="row">
+  		<div class="col-md-3 col-xs-1">
+  			<h3 id="your">Your total score is: </h3>
+  		</div>
+		<div class="col-md-9 col-xs-11" id="score">
+  			<h3 id="answer">Answer</h3>
+  		</div>
+
+	</div>
+	
+	<div class="row">
+  		<div class="col-lg-12 col-xs-12">
+  			<h3 id="number">0</h3> 
+  		</div>
+	</div>
+	
+	<div id="emptyDiv"></div>
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"> 
+</script>
+
 </body>
 </html>

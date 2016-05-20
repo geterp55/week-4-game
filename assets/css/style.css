@@ -1,34 +1,30 @@
-
+/* class. Or ID # */
 img{
 	width:141px;
 }
 
 
-
+#counterBox{
+	font-size: 24px;
+	color:#B0171F;
+}
 
 #box2{
 	background-color: #00E5EE;
 }
 
 
-}
 #ruby{
-	
-
+	float:left;
 }
 #diamond{
-	
-		
-	
-}	
-#emerald{
-	
-	
+	float: left;
 }
-
 #yellow{
-	
-	
+	float:left;
+}
+#emerald{
+	float: left;
 }
 
 
