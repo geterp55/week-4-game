@@ -10,26 +10,37 @@ img{
 }
 
 #box2{
-	background-color: #00E5EE;
+	/*background-color: #00E5EE;*/
 }
 
+#startButton{
+	background-color: #fff;
+	color:#333;
+
+
+}
 
 #ruby{
 	float:left;
+	background-color: #EE0000;
 }
 #diamond{
 	float: left;
+	background-color: #00F5FF;
 }
 #yellow{
 	float:left;
+	background-color: #D9D919;
 }
 #emerald{
 	float: left;
+	background-color: #629632;
 }
 
 
 h3#your{
-	text-align: right;
+	float: left;
+	text-align: left;
 }
 
 h3#answer {
