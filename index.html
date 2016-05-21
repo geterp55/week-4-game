@@ -25,7 +25,7 @@
 			There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
 			</p>
 
-			<p>You win th egame by matching your total score to random number, you lose the game if your total score goes above the random number.
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
 			</p>
 		
 			<p>The value of each crystal is hidden from you until you click on it.</p>
@@ -36,16 +36,24 @@
 	</div>
 	
 	<div class="row">
-  		<div class="col-lg-8" id="counterBox">
-  		
+  		<div class="col-lg-12 col-xs-12" id="counterBox"></div>
+		
+		<div class="col-lg-12 col-xs-12" id="gameCounterWins">
+			Wins:
   		</div>
-		<div class="col-lg-8" id="gameCounterBox">
-			<div>Wins:</div>
-	  		<div>Losses: </div>
+	
+  		<div class="col-lg-12 col-xs-12" id="gameCounterLosses">
+			Losses:
   		</div>
+
+
 	</div>
 
-<!--place bootstrap buttons herer instead of grid + images place on-click functions-->
+<!--set start button to start number in .js-->
+
+	<div id="startButton">
+		<input class="btn btn-primary" type="button" value="Start" id="startButton">
+	</div>
 
 	<div class="allButtons">
 		<button class="btn btn-default" type="submit" id="ruby">Ruby</button>	
@@ -58,18 +66,20 @@
 
 
 	<div class="row">
-  		<div class="col-md-3 col-xs-1">
+  		<div class="col-lg-12 col-xs-12">
   			<h3 id="your">Your total score is: </h3>
   		</div>
-		<div class="col-md-9 col-xs-11" id="score">
-  			<h3 id="answer">Answer</h3>
+  	</div>	
+  	<div class="row">
+		<div class="col-lg-12 col-xs-12" id="score">
+  			<h3 id="answer"></h3
   		</div>
 
 	</div>
 	
 	<div class="row">
   		<div class="col-lg-12 col-xs-12">
-  			<h3 id="number">0</h3> 
+  			<h3 id="number"></h3> 
   		</div>
 	</div>
 	
@@ -79,7 +89,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-<script type="text/javascript" src="assets/javascript/game.js"> 
+<script type="text/javascript" src="assets/javascript/game2.js"> 
 </script>
 
 </body>
